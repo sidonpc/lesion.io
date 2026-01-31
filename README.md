@@ -1,2 +1,2 @@
 # lesion.io
-This is the static home page for the lesion.io website.
+This is the static front pages for the lesion.io website.
