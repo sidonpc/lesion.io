@@ -386,11 +386,13 @@
           <!-- CTA Buttons -->
           <div class="flex items-center gap-3">
             <button
+              onclick="window.open('https://app.lesion.io/login')"
               class="px-5 py-2 rounded-lg text-slate-300 hover:text-orange-500 hover:bg-orange-500/10 transition-all font-medium"
             >
               Sign In
             </button>
             <button
+              onclick="window.open('https://app.lesion.io/signup')"
               class="px-6 py-2 rounded-lg bg-orange-600 hover:bg-orange-700 text-white font-medium border border-orange-500/50 transition-all shadow-lg shadow-orange-600/20"
             >
               Get Started
@@ -497,7 +499,7 @@
                 <div class="text-white-400">
                   [*] Found 23 potential CVEs for sudo 1.9.17
                 </div>
-                <div class="text-white-400">[✓] 17 PoCs identified</div>
+                <div class="text-white-400">[*] 17 PoCs identified</div>
                 <div class="flex items-center">
                   <span class="text-white-400"
                     >[✓] Payload verified and enhanced</span></div>
@@ -572,7 +574,7 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 <span class="text-slate-300"
-                  >Search 500M+ exploits and vulnerabilities instantly</span
+                  >Consolidates research and searches</span
                 >
               </li>
               <li class="flex items-start gap-3">
@@ -591,7 +593,7 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 <span class="text-slate-300"
-                  >AI-powered relevance ranking and filtering</span
+                  >AI-powered exploit enhancement and safety pass</span
                 >
               </li>
               <li class="flex items-start gap-3">
@@ -629,7 +631,7 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 <span class="text-slate-300"
-                  >Real-time CVE monitoring and alerts</span
+                  >Real-time CVE feeds keeping you up to date</span
                 >
               </li>
               <li class="flex items-start gap-3">
@@ -648,7 +650,7 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 <span class="text-slate-300"
-                  >Integration with Metasploit, Burp Suite, and more</span
+                  >Integration with lesion software and more</span
                 >
               </li>
             </ul>
@@ -833,9 +835,9 @@
       <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
         <div class="text-center">
           <div class="text-3xl md:text-4xl gradient-text mb-2 font-bold">
-            10K+
+            1st
           </div>
-          <div class="text-sm text-slate-400">Active Penetration Testers</div>
+          <div class="text-sm text-slate-400">Commercial exploit search engine</div>
         </div>
         <div class="text-center">
           <div class="text-3xl md:text-4xl gradient-text mb-2 font-bold">
@@ -845,15 +847,15 @@
         </div>
         <div class="text-center">
           <div class="text-3xl md:text-4xl gradient-text mb-2 font-bold">
-            500M+
+            30M+
           </div>
-          <div class="text-sm text-slate-400">Vulnerabilities Detected</div>
+          <div class="text-sm text-slate-400">Vulnerabilities Indexed</div>
         </div>
         <div class="text-center">
           <div class="text-3xl md:text-4xl gradient-text mb-2 font-bold">
-            &lt;100ms
+            20+
           </div>
-          <div class="text-sm text-slate-400">Response Time</div>
+          <div class="text-sm text-slate-400">Vulnerability Feeds</div>
         </div>
       </div>
     </section>
@@ -865,7 +867,7 @@
           <div
             class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4"
           >
-            <span class="text-sm font-medium">Capabilities</span>
+            <span class="text-sm font-medium">Tools & Capabilities</span>
           </div>
           <h2 class="text-4xl md:text-5xl mb-4 font-bold">
             Built for Offensive Operations
@@ -880,26 +882,30 @@
           <div
             class="bg-slate-900/50 border-2 border-orange-500/20 p-6 rounded-lg hover:border-orange-500/40 transition-all group"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ff6600"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="mb-4 group-hover:scale-110 transition-transform"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <circle cx="12" cy="12" r="6" />
-              <circle cx="12" cy="12" r="2" />
-            </svg>
-            <h3 class="text-xl mb-3 font-semibold">Advanced Reconnaissance</h3>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Released</span>
+            <h3 class="text-xl mb-3 font-semibold">Lesion Search</h3>
             <p class="text-slate-400">
-              Comprehensive intelligence gathering with automated OSINT, port
-              scanning, and service enumeration.
+              An exploit search engine where exploits are enhanced and reviewed for safety.
+            </p>
+          </div>
+
+          <div
+            class="bg-slate-900/50 border-2 border-orange-500/20 p-6 rounded-lg hover:border-orange-500/40 transition-all group"
+          >
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Alpha</span>
+            <h3 class="text-xl mb-3 font-semibold">Lesion Workbench</h3>
+            <p class="text-slate-400">
+              A collaboration and project creation tool for penetraiton testers and red teamers.
+            </p>
+          </div>
+
+          <div
+            class="bg-slate-900/50 border-2 border-orange-500/20 p-6 rounded-lg hover:border-orange-500/40 transition-all group"
+          >
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Pre-Alpha</span>
+            <h3 class="text-xl mb-3 font-semibold">Lesion Missions</h3>
+            <p class="text-slate-400">
+              An ASM, PTaaS Platform, and Reporting platform for penetration testers.
             </p>
           </div>
 
@@ -918,12 +924,15 @@
               stroke-linejoin="round"
               class="mb-4 group-hover:scale-110 transition-transform"
             >
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                <g transform="translate(12 12) scale(1.25) translate(-12 -12)">
+                <path d="M4 6h16v4H4z" />
+                <path d="M10 14h4v4h-4z" />
+                <path d="M12 10v4" />
+                </g>
             </svg>
-            <h3 class="text-xl mb-3 font-semibold">Exploit Development</h3>
+            <h3 class="text-xl mb-3 font-semibold">Network Penetration Testing</h3>
             <p class="text-slate-400">
-              Integrated exploit framework with custom payload generation and
-              zero-day testing capabilities.
+              Simulates attacks across internal and external networks to identify exposed systems, weak configurations, and lateral-movement paths.
             </p>
           </div>
 
@@ -942,13 +951,14 @@
               stroke-linejoin="round"
               class="mb-4 group-hover:scale-110 transition-transform"
             >
-              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                <g transform="translate(12 12) scale(1.25) translate(-12 -12)">
+                <rect x="3" y="4" width="18" height="14" rx="2" />
+                <line x1="3" y1="8" x2="21" y2="8" />
+                </g>
             </svg>
-            <h3 class="text-xl mb-3 font-semibold">Credential Harvesting</h3>
+            <h3 class="text-xl mb-3 font-semibold">Web Application Penetration Testing</h3>
             <p class="text-slate-400">
-              Sophisticated password cracking, hash extraction, and credential
-              dumping modules.
+              Tests web applications for exploitable flaws in authentication, authorization, input handling, and business logic.
             </p>
           </div>
 
@@ -967,62 +977,13 @@
               stroke-linejoin="round"
               class="mb-4 group-hover:scale-110 transition-transform"
             >
-              <polyline points="16 18 22 12 16 6" />
-              <polyline points="8 6 2 12 8 18" />
+                <g transform="translate(12 12) scale(1.25) translate(-12 -12)">
+                <path d="M7 18h9a4 4 0 000-8 5 5 0 00-9.6 1.6A3.5 3.5 0 007 18z" />
+                </g>
             </svg>
-            <h3 class="text-xl mb-3 font-semibold">Custom Scripting</h3>
+            <h3 class="text-xl mb-3 font-semibold">Cloud Penetration Testing</h3>
             <p class="text-slate-400">
-              Python and Ruby integration for rapid prototype development and
-              custom attack chains.
-            </p>
-          </div>
-
-          <div
-            class="bg-slate-900/50 border-2 border-orange-500/20 p-6 rounded-lg hover:border-orange-500/40 transition-all group"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ff6600"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="mb-4 group-hover:scale-110 transition-transform"
-            >
-              <polyline points="4 17 10 11 4 5" />
-              <line x1="12" y1="19" x2="20" y2="19" />
-            </svg>
-            <h3 class="text-xl mb-3 font-semibold">Command & Control</h3>
-            <p class="text-slate-400">
-              Secure C2 infrastructure with encrypted channels and
-              anti-forensics capabilities.
-            </p>
-          </div>
-
-          <div
-            class="bg-slate-900/50 border-2 border-orange-500/20 p-6 rounded-lg hover:border-orange-500/40 transition-all group"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ff6600"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="mb-4 group-hover:scale-110 transition-transform"
-            >
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
-            </svg>
-            <h3 class="text-xl mb-3 font-semibold">OpSec Protection</h3>
-            <p class="text-slate-400">
-              Built-in evasion techniques, traffic obfuscation, and operational
-              security safeguards.
+              Assesses cloud environments for misconfigurations, insecure services, and privilege-escalation risks across cloud resources.
             </p>
           </div>
         </div>
@@ -1036,7 +997,7 @@
           <div
             class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4"
           >
-            <span class="text-sm font-medium">Pricing</span>
+            <span class="text-sm font-medium">Lesion Search</span>
           </div>
           <h2 class="text-4xl md:text-5xl mb-4 font-bold">
             Choose Your Arsenal
@@ -1088,7 +1049,7 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 <span class="text-sm text-slate-300"
-                  >Core exploitation modules</span
+                  >Core exploitation searches</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -1106,7 +1067,7 @@
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-sm text-slate-300">Community support</span>
+                <span class="text-sm text-slate-300">Email support</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg
@@ -1140,7 +1101,7 @@
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-sm text-slate-300">Basic reporting</span>
+                <span class="text-sm text-slate-300">Search filters</span>
               </li>
             </ul>
             <button
