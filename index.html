@@ -116,197 +116,139 @@
     <canvas id="canvas"></canvas>
 
     <!-- Navigation -->
-    <nav
-      class="fixed top-0 w-full z-50 bg-[#0a0e1a]/95 backdrop-blur-md border-b-2 border-orange-500/20 navbar-glow"
-    >
-      <div class="max-w-7xl mx-auto px-6 py-4">
-        <div class="flex items-center justify-between">
-          <!-- Logo -->
-          <div class="flex items-center gap-3">
-            <img
-              src="./src/images/Asset-5.png"
-              alt="Asset-2"
-              width="140px"
-              height="120px"
-            />
-          </div>
+<nav
+  class="fixed top-0 w-full z-50 bg-[#0a0e1a]/95 backdrop-blur-md border-b-2 border-orange-500/20 navbar-glow"
+>
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <img
+          src="./src/images/Asset-5.png"
+          alt="Asset-2"
+          width="140px"
+          height="120px"
+        />
+      </div>
 
-          <!-- Navigation Links -->
-          <div class="hidden md:flex items-center gap-1">
-            <!-- Features Dropdown -->
-            <div class="dropdown relative">
-              <a
-              href="#features"
-              class="px-4 py-2 rounded-lg hover:bg-orange-500/10 hover:text-orange-500 transition-all text-slate-300 font-medium"
+      <!-- Navigation Links -->
+      <div class="hidden md:flex items-center gap-1 flex-1 justify-center">
+        <!-- Features Dropdown -->
+        <div class="dropdown relative">
+          <a
+          href="#features"
+          class="px-4 py-2 rounded-lg hover:bg-orange-500/10 hover:text-orange-500 transition-all text-slate-300 font-medium"
+        >
+          Features
+        </a>
+        </div>
+
+        <!-- Tools Dropdown -->
+        <div class="dropdown relative">
+          <a
+            href="#search"
+            class="px-4 py-2 rounded-lg hover:bg-orange-500/10 hover:text-orange-500 transition-all text-slate-300 font-medium flex items-center gap-1"
+          >
+            Tools
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              Features
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown-content">
+            <a href="https://app.lesion.io/search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="margin-right: 0.5rem"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.35-4.35" />
+              </svg>
+              Lesion Search
             </a>
-            </div>
-
-            <!-- Tools Dropdown -->
-            <div class="dropdown relative">
-              <a
-                href="#search"
-                class="px-4 py-2 rounded-lg hover:bg-orange-500/10 hover:text-orange-500 transition-all text-slate-300 font-medium flex items-center gap-1"
-              >
-                Tools
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </a>
-              <div class="dropdown-content">
-                <a href="https://app.lesion.io/search">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    style="margin-right: 0.5rem"
-                  >
-                    <circle cx="11" cy="11" r="8" />
-                    <path d="m21 21-4.35-4.35" />
-                  </svg>
-                  Lesion Search
-                </a>
-                <a href="https://app.lesion.io/contact_us">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    style="margin-right: 0.5rem"
-                  >
-                    <path d="M3 7V5a2 2 0 0 1 2-2h2" />
-                    <path d="M17 3h2a2 2 0 0 1 2 2v2" />
-                    <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
-                    <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
-                  </svg>
-                  Lesion Missions
-                </a>
-                <a href="https://app.lesion.io/contact_us">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    style="margin-right: 0.5rem"
-                  >
-                    <polyline points="16 18 22 12 16 6" />
-                    <polyline points="8 6 2 12 8 18" />
-                  </svg>
-                  Lesion Controls
-                </a>
-              </div>
-            </div>
-
-            <!-- Solutions Dropdown -->
-            <div class="dropdown relative">
-              <a
-                href="#solutions"
-                class="px-4 py-2 rounded-lg hover:bg-orange-500/10 hover:text-orange-500 transition-all text-slate-300 font-medium flex items-center gap-1"
-              >
-                Solutions
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </a>
-              <div class="dropdown-content">
-                <a href="https://app.lesion.io/contact_us">Int / Ext Pentesting</a>
-                <a href="https://app.lesion.io/contact_us">Web App Pentesting</a>
-                <a href="https://app.lesion.io/contact_usg">Cloud Security</a>
-                <div class="nav-divider"></div>
-                <a href="#case-studies">Case Studies</a>
-              </div>
-            </div>
-
-            <!-- Pricing -->
-            <a
-              href="#pricing"
-              class="px-4 py-2 rounded-lg hover:bg-orange-500/10 hover:text-orange-500 transition-all text-slate-300 font-medium"
-            >
-              Pricing
-            </a>
-
-            <!-- Resources Dropdown -->
-            <div class="dropdown relative">
-              <a
-                href="#"
-                class="px-4 py-2 rounded-lg hover:bg-orange-500/10 hover:text-orange-500 transition-all text-slate-300 font-medium flex items-center gap-1"
-              >
-                Resources
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </a>
-              <div class="dropdown-content">
-                <a href="https://blog.lesion.io">Blog</a>
-              </div>
-            </div>
           </div>
+        </div>
 
-          <!-- CTA Buttons -->
-          <div class="flex items-center gap-3">
-            <button
-              onclick="window.open('https://app.lesion.io/login')"
-              class="px-5 py-2 rounded-lg text-slate-300 hover:text-orange-500 hover:bg-orange-500/10 transition-all font-medium"
+        <!-- Solutions Dropdown -->
+        <div class="dropdown relative">
+          <a
+            href="#leaderboard"
+            class="px-4 py-2 rounded-lg hover:bg-orange-500/10 hover:text-orange-500 transition-all text-slate-300 font-medium flex items-center gap-1"
+          >
+            Leaderboard
+          </a>
+        </div>
+
+        <!-- Pricing -->
+        <a
+          href="#pricing"
+          class="px-4 py-2 rounded-lg hover:bg-orange-500/10 hover:text-orange-500 transition-all text-slate-300 font-medium"
+        >
+          Pricing
+        </a>
+
+        <!-- Resources Dropdown -->
+        <div class="dropdown relative">
+          <a
+            href="#"
+            class="px-4 py-2 rounded-lg hover:bg-orange-500/10 hover:text-orange-500 transition-all text-slate-300 font-medium flex items-center gap-1"
+          >
+            Resources
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              Sign In
-            </button>
-            <button
-              onclick="window.open('https://app.lesion.io/signup')"
-              class="px-6 py-2 rounded-lg bg-orange-600 hover:bg-orange-700 text-white font-medium border border-orange-500/50 transition-all shadow-lg shadow-orange-600/20"
-            >
-              Get Started
-            </button>
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown-content">
+            <a href="https://blog.lesion.io">Blog</a>
           </div>
         </div>
       </div>
-    </nav>
+
+      <!-- CTA Buttons -->
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <button
+          onclick="window.open('https://app.lesion.io/login')"
+          class="px-5 py-2 rounded-lg text-slate-300 hover:text-orange-500 hover:bg-orange-500/10 transition-all font-medium"
+        >
+          Sign In
+        </button>
+        <button
+          onclick="window.open('https://app.lesion.io/signup')"
+          class="px-6 py-2 rounded-lg bg-orange-600 hover:bg-orange-700 text-white font-medium border border-orange-500/50 transition-all shadow-lg shadow-orange-600/20"
+        >
+          Get Started
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
 
     <!-- Hero Section -->
     <section class="relative pt-32 pb-20 px-6 overflow-hidden">
@@ -341,17 +283,16 @@
               <line x1="12" y1="19" x2="20" y2="19" />
             </svg>
             <span class="text-sm font-medium"
-              >Trusted by Security Professionals Worldwide</span
+              >Early Access — Built for Elite Testers</span
             >
           </div>
 
           <h1 class="text-5xl md:text-7xl mb-6 font-bold gradient-text">
-            Offensive Security Tools & Services
+            Search CVEs. Map Exploits. Rank PoCs.
           </h1>
 
           <p class="text-xl text-slate-400 mb-8 max-w-2xl mx-auto">
-            Advanced penetration testing software designed for security
-            professionals. Exploit, collaborate, and dominate.
+            A searchable exploit intelligence database connecting vulnerabilities to real, testable proof-of-concepts.
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -584,6 +525,7 @@
               </button>
               <button
                 class="px-6 py-3 rounded-lg border-2 border-orange-500/30 text-orange-500 hover:bg-orange-500/10 font-medium transition-all"
+                onclick="window.location.href='https://blog.lesion.io/conversor-walkthrough-htb-easy-box/"
               >
                 Use Case
               </button>
@@ -741,9 +683,9 @@
       <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
         <div class="text-center">
           <div class="text-3xl md:text-4xl gradient-text mb-2 font-bold">
-            1st
+            24/7
           </div>
-          <div class="text-sm text-slate-400">Commercial exploit search engine</div>
+          <div class="text-sm text-slate-400">Exploit Intelligence Feeds</div>
         </div>
         <div class="text-center">
           <div class="text-3xl md:text-4xl gradient-text mb-2 font-bold">
@@ -773,14 +715,13 @@
           <div
             class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4"
           >
-            <span class="text-sm font-medium">Tools & Capabilities</span>
+            <span class="text-sm font-medium">Exploit Discovery Engine</span>
           </div>
           <h2 class="text-4xl md:text-5xl mb-4 font-bold">
             Built for Offensive Operations
           </h2>
           <p class="text-xl text-slate-400 max-w-2xl mx-auto">
-            Enterprise-grade tools engineered for sophisticated attack
-            simulations and vulnerability research
+            Structured CVE intelligence mapped to real, testable exploits and proof-of-concepts.
           </p>
         </div>
 
@@ -788,108 +729,60 @@
           <div
             class="bg-slate-900/50 border-2 border-orange-500/20 p-6 rounded-lg hover:border-orange-500/40 transition-all group"
           >
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Released</span>
-            <h3 class="text-xl mb-3 font-semibold">Lesion Search</h3>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Search</span>
+            <h3 class="text-xl mb-3 font-semibold">CVE Deep Search</h3>
             <p class="text-slate-400">
-              An exploit search engine where exploits are enhanced and reviewed for safety.
+              Query by keyword, vendor, product, version, CVE, exploit type, or attack vector.
             </p>
           </div>
 
           <div
             class="bg-slate-900/50 border-2 border-orange-500/20 p-6 rounded-lg hover:border-orange-500/40 transition-all group"
           >
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Alpha</span>
-            <h3 class="text-xl mb-3 font-semibold">Lesion Controls</h3>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Map</span>
+            <h3 class="text-xl mb-3 font-semibold">Exploit Mapping</h3>
             <p class="text-slate-400">
-              A compliance and security framework tool built to streamline cybersecurity.
+              Automatically links vulnerabilities to public exploits, GitHub PoCs, Metasploit modules, and research writeups.
             </p>
           </div>
 
           <div
             class="bg-slate-900/50 border-2 border-orange-500/20 p-6 rounded-lg hover:border-orange-500/40 transition-all group"
           >
-            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Pre-Alpha</span>
-            <h3 class="text-xl mb-3 font-semibold">Lesion Missions</h3>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Score</span>
+            <h3 class="text-xl mb-3 font-semibold">PoC Leaderboards</h3>
             <p class="text-slate-400">
-              Coming soon...
+              Community-scored proof-of-concepts ranked by reliability, execution success, and operational impact.
             </p>
           </div>
 
           <div
             class="bg-slate-900/50 border-2 border-orange-500/20 p-6 rounded-lg hover:border-orange-500/40 transition-all group"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ff6600"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="mb-4 group-hover:scale-110 transition-transform"
-            >
-                <g transform="translate(12 12) scale(1.25) translate(-12 -12)">
-                <path d="M4 6h16v4H4z" />
-                <path d="M10 14h4v4h-4z" />
-                <path d="M12 10v4" />
-                </g>
-            </svg>
-            <h3 class="text-xl mb-3 font-semibold">Network Penetration Testing</h3>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Enhance</span>
+            <h3 class="text-xl mb-3 font-semibold">Enhanced Payload Insights</h3>
             <p class="text-slate-400">
-              Simulates attacks across internal and external networks to identify exposed systems, weak configurations, and lateral-movement paths.
+              Payloads analyzed, normalized, and enhanced for safer lab testing and clarity.            
             </p>
           </div>
 
           <div
             class="bg-slate-900/50 border-2 border-orange-500/20 p-6 rounded-lg hover:border-orange-500/40 transition-all group"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ff6600"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="mb-4 group-hover:scale-110 transition-transform"
-            >
-                <g transform="translate(12 12) scale(1.25) translate(-12 -12)">
-                <rect x="3" y="4" width="18" height="14" rx="2" />
-                <line x1="3" y1="8" x2="21" y2="8" />
-                </g>
-            </svg>
-            <h3 class="text-xl mb-3 font-semibold">Web Application Penetration Testing</h3>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Patch</span>
+            <h3 class="text-xl mb-3 font-semibold">Patch & Mitigation Mapping</h3>
             <p class="text-slate-400">
-              Tests web applications for exploitable flaws in authentication, authorization, input handling, and business logic.
+              Instantly view vendor advisories, patches, mitigations, and remediation references.
             </p>
           </div>
 
           <div
             class="bg-slate-900/50 border-2 border-orange-500/20 p-6 rounded-lg hover:border-orange-500/40 transition-all group"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#ff6600"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="mb-4 group-hover:scale-110 transition-transform"
-            >
-                <g transform="translate(12 12) scale(1.25) translate(-12 -12)">
-                <path d="M7 18h9a4 4 0 000-8 5 5 0 00-9.6 1.6A3.5 3.5 0 007 18z" />
-                </g>
-            </svg>
-            <h3 class="text-xl mb-3 font-semibold">Cloud Penetration Testing</h3>
+            <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 border border-orange-500/30 mb-4">Trending</span>
+            <h3 class="text-xl mb-3 font-semibold">Trending Vulnerabilities</h3>
             <p class="text-slate-400">
-              Assesses cloud environments for misconfigurations, insecure services, and privilege-escalation risks across cloud resources.
+              See trending vulnerabilites and their corresponding exploits. 
             </p>
           </div>
         </div>
@@ -909,7 +802,7 @@
             Choose Your Arsenal
           </h2>
           <p class="text-xl text-slate-400 max-w-2xl mx-auto">
-            Flexible pricing for teams of all sizes
+            We are currently in Early Access. So pricing has not been set in stone yet.
           </p>
         </div>
 
@@ -1028,7 +921,7 @@
             </div>
             <h3 class="text-2xl mb-2 font-semibold">Penetration Tester</h3>
             <div class="mb-6">
-              <span class="text-4xl font-bold">$10</span>
+              <span class="text-4xl font-bold">Free</span>
               <span class="text-slate-400">/month</span>
             </div>
             <ul class="space-y-3 mb-8">
@@ -1048,7 +941,7 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 <span class="text-sm text-slate-300"
-                  >Up to 10 team members</span
+                  >Coming soon...</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -1067,7 +960,7 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 <span class="text-sm text-slate-300"
-                  >All exploitation modules</span
+                  >Coming soon...</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -1085,7 +978,7 @@
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-sm text-slate-300">Priority support</span>
+                <span class="text-sm text-slate-300">Coming soon...</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg
@@ -1102,7 +995,7 @@
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-sm text-slate-300">Daily updates</span>
+                <span class="text-sm text-slate-300">Coming soon...</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg
@@ -1119,7 +1012,7 @@
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-sm text-slate-300">Advanced analytics</span>
+                <span class="text-sm text-slate-300">Coming soon...</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg
@@ -1136,7 +1029,7 @@
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-sm text-slate-300">Custom integrations</span>
+                <span class="text-sm text-slate-300">Coming soon...</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg
@@ -1154,7 +1047,7 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 <span class="text-sm text-slate-300"
-                  >Dedicated C2 infrastructure</span
+                  >Coming soon...</span
                 >
               </li>
             </ul>
@@ -1189,7 +1082,7 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 <span class="text-sm text-slate-300"
-                  >Unlimited team members</span
+                  >Coming soon...</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -1207,7 +1100,7 @@
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-sm text-slate-300">White-label options</span>
+                <span class="text-sm text-slate-300">Coming soon...</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg
@@ -1224,43 +1117,7 @@
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <span class="text-sm text-slate-300">SLA guarantee</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#ff6600"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="mt-0.5 flex-shrink-0"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <span class="text-sm text-slate-300"
-                  >On-premise deployment</span
-                >
-              </li>
-              <li class="flex items-start gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="#ff6600"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="mt-0.5 flex-shrink-0"
-                >
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                <span class="text-sm text-slate-300">Custom development</span>
+                <span class="text-sm text-slate-300">Coming soon...</span>
               </li>
               <li class="flex items-start gap-2">
                 <svg
@@ -1278,7 +1135,43 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 <span class="text-sm text-slate-300"
-                  >Training & onboarding</span
+                  >Coming soon...</span
+                >
+              </li>
+              <li class="flex items-start gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ff6600"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="mt-0.5 flex-shrink-0"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span class="text-sm text-slate-300">Coming soon...</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#ff6600"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="mt-0.5 flex-shrink-0"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span class="text-sm text-slate-300"
+                  >Coming soon...</span
                 >
               </li>
               <li class="flex items-start gap-2">
@@ -1297,7 +1190,7 @@
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
                 <span class="text-sm text-slate-300"
-                  >24/7 dedicated support</span
+                  >Coming soon...</span
                 >
               </li>
             </ul>
@@ -1318,11 +1211,10 @@
     >
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-4xl md:text-5xl mb-6 font-bold">
-          Ready to Elevate Your Red Team?
+          Ready to Find Some Exploits?
         </h2>
         <p class="text-xl text-slate-400 mb-8">
-          Join thousands of security professionals using REDSTRIKE to conduct
-          world-class penetration tests
+          Eliminate fragmented vulnerability research with a centralized, structured exploit database.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <button
@@ -1352,7 +1244,7 @@
               <span class="text-lg font-semibold">Lesion.io</span>
             </div>
             <p class="text-sm text-slate-400">
-              Advanced offensive security software for elite penetration testers
+               A searchable exploit intelligence database connecting vulnerabilities to real, testable proof-of-concepts. 
             </p>
           </div>
           <div>
@@ -1364,18 +1256,13 @@
                 >
               </li>
               <li>
-                <a href="#" class="hover:text-orange-500 transition-colors"
+                <a href="#pricing" class="hover:text-orange-500 transition-colors"
                   >Pricing</a
                 >
               </li>
               <li>
                 <a href="#" class="hover:text-orange-500 transition-colors"
                   >Documentation</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-500 transition-colors"
-                  >API</a
                 >
               </li>
             </ul>
@@ -1385,22 +1272,12 @@
             <ul class="space-y-2 text-sm text-slate-400">
               <li>
                 <a href="#" class="hover:text-orange-500 transition-colors"
-                  >About</a
+                  >Leaderboard</a
                 >
               </li>
               <li>
                 <a href="#" class="hover:text-orange-500 transition-colors"
                   >Blog</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-500 transition-colors"
-                  >Careers</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-orange-500 transition-colors"
-                  >Contact</a
                 >
               </li>
             </ul>
